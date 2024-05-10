@@ -1,0 +1,378 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.fluid-container {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+   top: 0;
+   
+    width: 100%;
+    z-index: 12;
+}
+
+body {
+    overflow: hidden;
+
+}
+
+
+.box {
+    height: auto;
+}
+
+
+.slider {
+    position: relative;
+    width: 100%;
+    
+    overflow: hidden;
+}
+
+#img {
+    background-image: url(images/mainbackground.jpg);
+}
+
+#img2 {
+    background-image: url(images/men.jpg);
+}
+
+#img3 {
+    background-image: url(images/kids.jpg);
+}
+
+#img4 {
+    background-image: url(images/perfume.jpg);
+
+}
+
+.slides {
+    display: flex;
+   
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    min-height:100vh ;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 12;
+    background-color: transparent;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.left {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.right {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.mainHeading {
+    text-align: left;
+}
+
+.mainHeading h1 {
+    font-size: 150px;
+    color: white;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    animation-name: fontChange;
+    animation-duration: 1s;
+}
+
+@keyframes fontChange {
+    0% {
+        font-size: 230px;
+    }
+
+    100% {
+        font-size: 150px;
+    }
+}
+
+.mainHeading a {
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    margin: 0px 10px;
+}
+
+.right .inputDisplay {
+    width: 380px;
+    margin-top: 10px;
+    height: 35px;
+    border: solid 1px black;
+    display: flex;
+    justify-content: end;
+    cursor: pointer;
+    background-color: white;
+    position: absolute;
+
+    animation-duration: 1s;
+    animation-name: change;
+}
+
+@keyframes change {
+    from {
+        top: 25%;
+    }
+
+    to {
+        top: 3%;
+    }
+}
+
+.inputDisplay p {
+    color: gray;
+    font-size: 13px;
+    margin: 5px;
+}
+
+.btnSession button {
+    background-color: transparent;
+    color: lightgray;
+    font-size: 13px;
+    border: none;
+    margin: 10px;
+
+}
+
+.icon i {
+    color: white;
+    margin: 20px;
+}
+
+.icon .box {
+    width: 440px;
+    height: 80vh;
+    border: solid 1px black;
+    background-color: white;
+    position: relative;
+    left: 10%;
+    top: 2%;
+    border: solid 1px black;
+    display: none;
+}
+
+.box--Heading h1 {
+    font-size: 100px;
+
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#main-zara {
+    z-index: 13;
+}
+
+.box--Heading {
+    text-align: center;
+    border: solid 1px black;
+    padding: 5px;
+
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    margin: 10px;
+}
+
+.links {
+    text-align: center;
+}
+
+.second {
+    position: relative;
+    z-index: 12;
+}
+
+.second--links {
+    height: 57vh;
+    display: flex;
+    position: relative;
+    z-index: 11;
+    flex-direction: column;
+    overflow-y: auto;
+
+}
+
+.second--links a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+.btnOnScroll button {
+    background-color: transparent;
+    border: solid 1px black;
+    font-size: 13px;
+    margin: 20px;
+    padding: 5px;
+}
+
+.close--btn {
+    border: none;
+    color: white;
+    padding: 5px;
+    font-size: 25px;
+    background-color: transparent;
+    margin: 20px;
+}
+
+.background-section1 {
+    background-image: url(images/bg2.jpg);
+
+}
+
+.background-section2 {
+    background-image: url(images/bg3.jpg);
+
+}
+
+.background-section3 {
+    background-image: url(images/bg4.jpg);
+
+}
+
+.background-section4 {
+    background-image: url(images/bg5.jpg);
+
+}
+
+.background-section5 {
+    background-image: url(images/bg6.jpg);
+
+}
+
+.background-section6 {
+    background-image: url(images/bg7.jpg);
+
+}
+.background-section7 {
+    background-image: url(images/bg8.jpg);
+
+}
+.background-section8 {
+    background-image: url(images/bg9.jpg);
+
+}
+.background-section9 {
+    background-image: url(images/bg10.jpg);
+
+}
+.background-section10 {
+    background-image: url(images/bg11.jpg);
+
+}
+.background-section11 {
+    background-image: url(images/bg12.jpg);
+
+}
+.background-section12 {
+    background-image: url(images/bg13.jpg);
+
+}
+.background-section13 {
+    background-image: url(images/bg14.jpg);
+
+}
+.background-section14 {
+    background-image: url(images/bg15.jpg);
+
+}
+.background-section15 {
+    background-image: url(images/bg16.jpg);
+
+}
+.background-section16 {
+    background-image: url(images/bg17.jpg);
+
+}
+.background-section17 {
+    background-image: url(images/bg18.jpg);
+
+}
+.background-section18 {
+    background-image: url(images/bg19.jpg);
+
+}
+.background-section19 {
+    background-image: url(images/bg20.jpg);
+
+}
+.background-section20 {
+    background-image: url(images/bg21.jpg);
+
+}
+.background-section21 {
+    background-image: url(images/bg22.jpg);
+
+}
+#Collection {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    background-position: center;
+    transition: 0.5s ease-in-out;
+}
+
+.top {
+    top: 0% !important;
+}
+
+.down {
+    top: 100% !important;
+}
+
+.women {
+    background-image: url(images/mainbackground.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.men {
+    background-image: url(images/mainbackground.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+}
+
+.men img {
+    width: 100%;
+}

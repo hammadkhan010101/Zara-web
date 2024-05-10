@@ -1,0 +1,309 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.fluid-container {
+    display: flex;
+    justify-content: space-between;
+    /* position: absolute; */
+    width: 100%;
+    overflow: hidden;
+}
+body{
+ 
+}
+
+/* .fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    z-index: 100;
+} */
+.box{
+    height: auto;
+}
+nav {
+  
+}
+
+.left {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.right {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.mainHeading {
+    text-align: left;
+}
+
+.mainHeading h1 {
+    font-size: 150px;
+    color: black;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    animation-name: fontChange;
+    animation-duration: 1s;
+}
+
+
+
+.mainHeading P {
+    font-size: 18px;
+    color: black;
+    margin: 0px 10px;
+}
+.right .inputDisplay {
+    width: 380px;
+    margin-top: 10px;
+    height: 35px;
+    border: solid 1px black;
+    display: flex;
+    justify-content: end;
+    cursor: pointer;
+    background-color: white;
+    position: absolute;
+
+    animation-duration: 1s;
+    animation-name: change;
+}
+
+@keyframes change {
+    from {
+        top: 25%;
+    }
+
+    to {
+        top: 3%;
+    }
+}
+
+.inputDisplay p {
+    color: gray;
+    font-size: 13px;
+    margin: 5px;
+}
+
+.btnSession button {
+    background-color: transparent;
+    color: black;
+    font-size: 13px;
+    border: none;
+    margin: 10px;
+
+}
+
+.icon i {
+    color: black;
+    margin: 20px;
+}
+
+.icon .box {
+    width: 440px;
+    height: 80vh;
+    border: solid 1px black;
+    background-color: white;
+    position: relative;
+    left: 10%;
+    top: 2%;
+    border: solid 1px black;
+    display: none;
+}
+
+.box--Heading h1 {
+    font-size: 100px;
+    
+    font-family: 'Times New Roman', Times, serif;
+}
+#main-zara{
+    position: relative;
+    z-index: 10;
+}
+
+.box--Heading {
+    text-align: center;
+    border: solid 1px black;
+    padding: 5px;
+    
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    margin: 10px;
+}
+
+.links {
+    text-align: center;
+}
+.second{
+    position: relative;
+    z-index: 12;
+}
+
+.second--links {
+    height: 57vh;
+    display: flex;
+    position: relative;
+    z-index: 11;
+    flex-direction: column;
+    overflow-y: auto;
+
+}
+
+.second--links a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+.btnOnScroll button {
+    background-color: transparent;
+    border: solid 1px black;
+    font-size: 13px;
+    margin: 20px;
+    padding: 5px;
+}
+
+.close--btn {
+    border: none;
+    color: black;
+    padding: 5px;
+    font-size: 25px;
+    background-color: transparent;
+    margin: 20px;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.login--div{
+    width: 40%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+   
+}
+.login--div input{
+    width: 100%;
+    padding: 0;
+    border: none;
+    border-bottom: solid 1px black;
+    height: 5vh;    
+    margin: 10px , 0px ;
+    outline: 1px solid white;
+}
+.login--div .input-div{
+    padding: 5px;
+    margin-bottom: 10px;
+    display: flex;
+}
+ ::placeholder{
+    font-size: 13px;
+    margin-bottom: 20px;
+   
+   
+}
+
+.register-div{
+   
+    width: 35%;
+    
+}
+.register-div button,.login-btn{
+    width: 100%;
+    background-color: transparent;
+    border: solid 1px black;
+    padding: 5px;
+    margin-top: 10px;
+    font-size: 13px;
+}
+.login-btn:hover{
+    width: 100%;
+    background-color: transparent;
+    border: solid 1px black;
+    padding: 5px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: lightgray;
+}
+.register-div button:hover{
+    width: 100%;
+    background-color: transparent;
+    border: solid 1px black;
+    padding: 5px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: lightgray;
+}
+.login--div a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+}
+.footer{
+    display: flex;
+    justify-content: left;
+    height: 70vh;
+    margin-top: 20px;
+    align-items: center;
+}
+.links--footer{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.links--footer a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    padding: 5px;
+}
+ a:hover{
+text-decoration: underline;
+}
+.links--footer p{
+    font-weight: 500;
+}
+.registar-form{
+    display: none;
+   
+}
+.Country{
+
+    margin-right: 10px;
+}
+.PhoneNo{
+    width: 70%;
+}
+.checkbox{
+    display: flex;
+    justify-content: left;
+    height: 20px;
+    width: 100%;
+    margin-top: 10px ;
+    padding-top: 10px;
+    align-items: center;
+}
+.checkbox input{
+    width: 5%;
+    height: 10px;
+    margin-bottom:2px ;
+   
+}
+.registar-form P{
+    font-size: 13px;
+
+}
