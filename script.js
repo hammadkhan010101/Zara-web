@@ -36,7 +36,7 @@ function handleKeyDown(event) {
   }
   if (event.key === 'ArrowDown') {
    
-      console.log(backImgs[idx])
+     
       backImgs[idx].classList.add('top');
       backImgs[idx].classList.remove('down');
       idx++;
@@ -136,7 +136,7 @@ Login.addEventListener('click', () => {
 let currentSlide = 0;
 
 function showSlide(index) {
-  // console.log(slide)
+
   if (index >= totalSlides) {
     currentSlide = 0;
 
